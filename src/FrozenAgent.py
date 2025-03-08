@@ -88,6 +88,7 @@ class FrozenAgentGreedy:
             discount_factor: The discount factor for computing the Q-value
         """
         #almacenamos los valores iniciales
+        self.descripcion=f"FrozenAgentGreedy. epsilon={epsilon} discount_factor={discount_factor}"
         self._epsilon = epsilon
         self._discount_factor = discount_factor
         self.env = env
@@ -188,6 +189,7 @@ class FrozenAgentGreedy:
 
 class FrozenAgentMC_On_First:
     def __init__(self, env, epsilon: float, discount_factor: float = 0.95):
+        self.descripcion=f"FrozenAgentMC_On_First. epsilon={epsilon} discount_factor={discount_factor}"
         self._epsilon = epsilon
         self._discount_factor = discount_factor
         self.env = env
@@ -285,6 +287,7 @@ class FrozenAgentMC_On_First:
 
 class FrozenAgentMC_On_All:
     def __init__(self, env, epsilon: float, discount_factor: float = 0.95):
+        self.descripcion=f"FrozenAgentMC_On_All. epsilon={epsilon} discount_factor={discount_factor}"
         self._epsilon = epsilon
         self._discount_factor = discount_factor
         self.env = env
@@ -378,6 +381,7 @@ class FrozenAgentMC_On_All:
 
 class FrozenAgentMC_Off_Pi:
     def __init__(self, env, epsilon: float, discount_factor: float = 0.95):
+        self.descripcion=f"FrozenAgentMC_Off_Pi. epsilon={epsilon} discount_factor={discount_factor}"
         self._epsilon = epsilon
         self._discount_factor = discount_factor
         self.env = env
@@ -484,6 +488,7 @@ class FrozenAgentMC_Off_Pi:
 
 class FrozenAgentMC_Off_Q:
     def __init__(self, env, epsilon: float, discount_factor: float = 0.95):
+        self.descripcion=f"FrozenAgentMC_Off_Q. epsilon={epsilon} discount_factor={discount_factor}"
         self._epsilon = epsilon
         self._discount_factor = discount_factor
         self.env = env
@@ -584,6 +589,7 @@ class FrozenAgentMC_Off_Q:
 
 class FrozenAgentSARSA:
     def __init__(self, env, epsilon: float, alpha: float, discount_factor: float = 0.95):
+        self.descripcion=f"FrozenAgentSARSA. epsilon={epsilon} alpha={alpha} discount_factor={discount_factor}"
         self._epsilon = epsilon
         self._discount_factor = discount_factor
         self._alpha=alpha
@@ -662,6 +668,7 @@ class FrozenAgentSARSA:
 
 class FrozenAgentQ_Learning:
     def __init__(self, env, epsilon: float, alpha: float, discount_factor: float = 0.95):
+        self.descripcion=f"FrozenAgentQ_Learning. epsilon={epsilon} alpha={alpha} discount_factor={discount_factor}"
         self._epsilon = epsilon
         self._discount_factor = discount_factor
         self._alpha=alpha
