@@ -97,7 +97,7 @@ class FrozenAgentGreedy:
         self.initAgent()
         
     def __str__(self):
-        return self.description
+        return self.descripcion
 
     def initAgent(self):
         #inicializa el agente con la configuración inicial
@@ -199,7 +199,7 @@ class FrozenAgentMC_On_First:
         self.initAgent()
 
     def __str__(self):
-        return self.description
+        return self.descripcion
 
     def initAgent(self):
         self.epsilon = self._epsilon
@@ -300,7 +300,7 @@ class FrozenAgentMC_On_All:
         self.initAgent()
 
     def __str__(self):
-        return self.description
+        return self.descripcion
 
     def initAgent(self):
         self.epsilon = self._epsilon
@@ -397,7 +397,7 @@ class FrozenAgentMC_Off_Pi:
         self.initAgent()
 
     def __str__(self):
-        return self.description
+        return self.descripcion
 
     def initAgent(self):
         self.epsilon = self._epsilon
@@ -507,7 +507,7 @@ class FrozenAgentMC_Off_Q:
         self.initAgent()
 
     def __str__(self):
-        return self.description
+        return self.descripcion
 
     def initAgent(self):
         self.epsilon = self._epsilon
@@ -612,7 +612,7 @@ class FrozenAgentSARSA:
         self.initAgent()
 
     def __str__(self):
-        return self.description
+        return self.descripcion
 
     def initAgent(self):
         self.alpha = self._alpha
@@ -694,7 +694,7 @@ class FrozenAgentQ_Learning:
         self.initAgent()
 
     def __str__(self):
-        return self.description
+        return self.descripcion
 
     def initAgent(self):
         self.alpha = self._alpha
