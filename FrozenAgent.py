@@ -96,9 +96,6 @@ class FrozenAgentGreedy:
         #incializo el agente con estos parametros
         self.initAgent()
         
-    def __str__(self):
-        return self.description
-
     def initAgent(self):
         #inicializa el agente con la configuración inicial
         #parametros del epsilon greedy y su decaimiento
@@ -198,9 +195,6 @@ class FrozenAgentMC_On_First:
         self.env = env
         self.initAgent()
 
-    def __str__(self):
-        return self.description
-
     def initAgent(self):
         self.epsilon = self._epsilon
         self.discount_factor = self._discount_factor
@@ -299,9 +293,6 @@ class FrozenAgentMC_On_All:
         self.env = env
         self.initAgent()
 
-    def __str__(self):
-        return self.description
-
     def initAgent(self):
         self.epsilon = self._epsilon
         self.discount_factor = self._discount_factor
@@ -395,9 +386,6 @@ class FrozenAgentMC_Off_Pi:
         self._discount_factor = discount_factor
         self.env = env
         self.initAgent()
-
-    def __str__(self):
-        return self.description
 
     def initAgent(self):
         self.epsilon = self._epsilon
@@ -506,9 +494,6 @@ class FrozenAgentMC_Off_Q:
         self.env = env
         self.initAgent()
 
-    def __str__(self):
-        return self.description
-
     def initAgent(self):
         self.epsilon = self._epsilon
         self.discount_factor = self._discount_factor
@@ -611,9 +596,6 @@ class FrozenAgentSARSA:
         self.env = env
         self.initAgent()
 
-    def __str__(self):
-        return self.description
-
     def initAgent(self):
         self.alpha = self._alpha
         self.epsilon = self._epsilon
@@ -692,9 +674,6 @@ class FrozenAgentQ_Learning:
         self._alpha=alpha
         self.env = env
         self.initAgent()
-
-    def __str__(self):
-        return self.description
 
     def initAgent(self):
         self.alpha = self._alpha
